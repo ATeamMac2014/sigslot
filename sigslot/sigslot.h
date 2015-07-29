@@ -11,3 +11,4 @@
 @interface sigslot : NSObject
 
 @end
+

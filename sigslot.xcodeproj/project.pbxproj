@@ -7,9 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A6BA7E71B6783850030AE06 /* Light.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A6BA7E51B6783850030AE06 /* Light.h */; };
+		3A6BA7E81B6783850030AE06 /* Light.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6BA7E61B6783850030AE06 /* Light.m */; };
+		3A6BA7EB1B6783A10030AE06 /* switcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A6BA7E91B6783A10030AE06 /* switcher.h */; };
+		3A6BA7EC1B6783A10030AE06 /* switcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6BA7EA1B6783A10030AE06 /* switcher.m */; };
+		3A6BA7EE1B67A2820030AE06 /* sigslotTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6BA7ED1B67A2820030AE06 /* sigslotTest.m */; };
 		3A7646821B674E9E00738A93 /* sigslot.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A7646811B674E9E00738A93 /* sigslot.h */; };
 		3A7646841B674E9E00738A93 /* sigslot.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7646831B674E9E00738A93 /* sigslot.m */; };
 		3A76468A1B674E9E00738A93 /* libsigslot.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A76467E1B674E9E00738A93 /* libsigslot.dylib */; };
+		3A76469A1B67506800738A93 /* hasSlots.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A7646981B67506800738A93 /* hasSlots.h */; };
+		3A76469B1B67506800738A93 /* hasSlots.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7646991B67506800738A93 /* hasSlots.m */; };
+		3A76469E1B6750CA00738A93 /* connectBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A76469C1B6750CA00738A93 /* connectBase.h */; };
+		3A76469F1B6750CA00738A93 /* connectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A76469D1B6750CA00738A93 /* connectBase.m */; };
+		3A7646A21B6750E500738A93 /* signalBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A7646A01B6750E500738A93 /* signalBase.h */; };
+		3A7646A31B6750E500738A93 /* signalBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7646A11B6750E500738A93 /* signalBase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,11 +34,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A6BA7E51B6783850030AE06 /* Light.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Light.h; sourceTree = "<group>"; };
+		3A6BA7E61B6783850030AE06 /* Light.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Light.m; sourceTree = "<group>"; };
+		3A6BA7E91B6783A10030AE06 /* switcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = switcher.h; sourceTree = "<group>"; };
+		3A6BA7EA1B6783A10030AE06 /* switcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = switcher.m; sourceTree = "<group>"; };
+		3A6BA7ED1B67A2820030AE06 /* sigslotTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sigslotTest.m; sourceTree = "<group>"; };
 		3A76467E1B674E9E00738A93 /* libsigslot.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libsigslot.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7646811B674E9E00738A93 /* sigslot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sigslot.h; sourceTree = "<group>"; };
 		3A7646831B674E9E00738A93 /* sigslot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sigslot.m; sourceTree = "<group>"; };
 		3A7646891B674E9E00738A93 /* sigslotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sigslotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A76468F1B674E9E00738A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A7646981B67506800738A93 /* hasSlots.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hasSlots.h; sourceTree = "<group>"; };
+		3A7646991B67506800738A93 /* hasSlots.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hasSlots.m; sourceTree = "<group>"; };
+		3A76469C1B6750CA00738A93 /* connectBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = connectBase.h; sourceTree = "<group>"; };
+		3A76469D1B6750CA00738A93 /* connectBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = connectBase.m; sourceTree = "<group>"; };
+		3A7646A01B6750E500738A93 /* signalBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = signalBase.h; sourceTree = "<group>"; };
+		3A7646A11B6750E500738A93 /* signalBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = signalBase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,9 +71,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A6BA7E41B6783300030AE06 /* example */ = {
+			isa = PBXGroup;
+			children = (
+				3A6BA7E51B6783850030AE06 /* Light.h */,
+				3A6BA7E61B6783850030AE06 /* Light.m */,
+				3A6BA7E91B6783A10030AE06 /* switcher.h */,
+				3A6BA7EA1B6783A10030AE06 /* switcher.m */,
+			);
+			name = example;
+			sourceTree = "<group>";
+		};
 		3A7646751B674E9E00738A93 = {
 			isa = PBXGroup;
 			children = (
+				3A6BA7E41B6783300030AE06 /* example */,
 				3A7646801B674E9E00738A93 /* sigslot */,
 				3A76468D1B674E9E00738A93 /* sigslotTests */,
 				3A76467F1B674E9E00738A93 /* Products */,
@@ -72,6 +106,12 @@
 			children = (
 				3A7646811B674E9E00738A93 /* sigslot.h */,
 				3A7646831B674E9E00738A93 /* sigslot.m */,
+				3A7646981B67506800738A93 /* hasSlots.h */,
+				3A7646991B67506800738A93 /* hasSlots.m */,
+				3A76469C1B6750CA00738A93 /* connectBase.h */,
+				3A76469D1B6750CA00738A93 /* connectBase.m */,
+				3A7646A01B6750E500738A93 /* signalBase.h */,
+				3A7646A11B6750E500738A93 /* signalBase.m */,
 			);
 			path = sigslot;
 			sourceTree = "<group>";
@@ -80,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				3A76468E1B674E9E00738A93 /* Supporting Files */,
+				3A6BA7ED1B67A2820030AE06 /* sigslotTest.m */,
 			);
 			path = sigslotTests;
 			sourceTree = "<group>";
@@ -100,6 +141,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A7646821B674E9E00738A93 /* sigslot.h in Headers */,
+				3A6BA7E71B6783850030AE06 /* Light.h in Headers */,
+				3A76469E1B6750CA00738A93 /* connectBase.h in Headers */,
+				3A6BA7EB1B6783A10030AE06 /* switcher.h in Headers */,
+				3A76469A1B67506800738A93 /* hasSlots.h in Headers */,
+				3A7646A21B6750E500738A93 /* signalBase.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A7646A31B6750E500738A93 /* signalBase.m in Sources */,
+				3A6BA7E81B6783850030AE06 /* Light.m in Sources */,
+				3A76469B1B67506800738A93 /* hasSlots.m in Sources */,
+				3A76469F1B6750CA00738A93 /* connectBase.m in Sources */,
+				3A6BA7EC1B6783A10030AE06 /* switcher.m in Sources */,
 				3A7646841B674E9E00738A93 /* sigslot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A6BA7EE1B67A2820030AE06 /* sigslotTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +413,7 @@
 				3A7646941B674E9E00738A93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A7646951B674E9E00738A93 /* Build configuration list for PBXNativeTarget "sigslotTests" */ = {
 			isa = XCConfigurationList;
@@ -369,6 +422,7 @@
 				3A7646971B674E9E00738A93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
