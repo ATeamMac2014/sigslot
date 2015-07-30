@@ -43,6 +43,10 @@
     SignalBase3* copySignal = [swithcher.signalSwitcher3 copy];
     [swithcher.signalSwitcher3 emitArg1:@"1" arg2:@"1" arg3:@"3"];
     
+    [swithcher.signalSwitcher8 connect:light selector:@selector(onSwitcher:arg2:arg3:arg4:arg5:arg6:arg7:arg8:)];
+    [swithcher.signalSwitcher8 emitArg1:@"1" arg2:@"2" arg3:@"3" arg4:@"4" arg5:@"5" arg6:@"6" arg7:@"7" arg8:@"8"];
+    
+    
     XCTAssert(YES, @"Pass");
 }
 

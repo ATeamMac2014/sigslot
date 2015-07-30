@@ -153,4 +153,72 @@
 
 @end
 
+@implementation SignalBase4
+-(id)copyWithZone:(NSZone *)zone{
+    SignalBase4* copy = [super copyWithZone:zone];
+    return copy;
+}
+
+-(void)emitArg1:(id)arg1 arg2:(id)arg2 arg3:(id)arg3 arg4:(id)arg4{
+    [self.copyConnectSlots enumerateObjectsUsingBlock:^(ConnectBase* obj, NSUInteger idx, BOOL *stop) {
+        [obj emitArg1:arg1 arg2:arg2 arg3:arg3 arg4:arg4];
+    }];
+}
+@end
+
+@implementation SignalBase5
+-(id)copyWithZone:(NSZone *)zone{
+    SignalBase5* copy = [super copyWithZone:zone];
+    return copy;
+}
+
+-(void)emitArg1:(id)arg1 arg2:(id)arg2 arg3:(id)arg3 arg4:(id)arg4 arg5:(id)arg5{
+    [self.copyConnectSlots enumerateObjectsUsingBlock:^(ConnectBase* obj, NSUInteger idx, BOOL *stop) {
+        [obj emitArg1:arg1 arg2:arg2 arg3:arg3 arg4:arg4 arg5:arg5];
+    }];
+}
+@end
+
+
+@implementation SignalBase6
+-(id)copyWithZone:(NSZone *)zone{
+    SignalBase6* copy = [super copyWithZone:zone];
+    return copy;
+}
+
+-(void)emitArg1:(id)arg1 arg2:(id)arg2 arg3:(id)arg3 arg4:(id)arg4 arg5:(id)arg5 arg6:(id)arg6{
+    [self.copyConnectSlots enumerateObjectsUsingBlock:^(ConnectBase* obj, NSUInteger idx, BOOL *stop) {
+        [obj emitArg1:arg1 arg2:arg2 arg3:arg3 arg4:arg4 arg5:arg5 arg6:arg6];
+    }];
+}
+@end
+
+
+@implementation SignalBase7
+-(id)copyWithZone:(NSZone *)zone{
+    SignalBase7* copy = [super copyWithZone:zone];
+    return copy;
+}
+
+-(void)emitArg1:(id)arg1 arg2:(id)arg2 arg3:(id)arg3 arg4:(id)arg4 arg5:(id)arg5 arg6:(id)arg6 arg7:(id)arg7{
+    [self.copyConnectSlots enumerateObjectsUsingBlock:^(ConnectBase* obj, NSUInteger idx, BOOL *stop) {
+        [obj emitArg1:arg1 arg2:arg2 arg3:arg3 arg4:arg4 arg5:arg5 arg6:arg6 arg7:arg7];
+    }];
+}
+@end
+
+@implementation SignalBase8
+-(id)copyWithZone:(NSZone *)zone{
+    SignalBase8* copy = [super copyWithZone:zone];
+    return copy;
+}
+
+-(void)emitArg1:(id)arg1 arg2:(id)arg2 arg3:(id)arg3 arg4:(id)arg4 arg5:(id)arg5 arg6:(id)arg6 arg7:(id)arg7 arg8:(id)arg8{
+    [self.copyConnectSlots enumerateObjectsUsingBlock:^(ConnectBase* obj, NSUInteger idx, BOOL *stop) {
+        [obj emitArg1:arg1 arg2:arg2 arg3:arg3 arg4:arg4 arg5:arg5 arg6:arg6 arg7:arg7 arg8:arg8];
+    }];
+}
+@end
+
+
 

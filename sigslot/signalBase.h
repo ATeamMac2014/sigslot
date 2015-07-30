@@ -33,3 +33,29 @@
 @interface SignalBase3 : SignalBase
 -(void)emitArg1:(id)arg1 arg2:(id)arg2 arg3:(id)arg3;
 @end
+
+@interface SignalBase4 : SignalBase
+-(void)emitArg1:(id)arg1 arg2:(id)arg2 arg3:(id)arg3 arg4:(id)arg4;
+@end
+
+@interface SignalBase5 : SignalBase
+-(void)emitArg1:(id)arg1 arg2:(id)arg2 arg3:(id)arg3 arg4:(id)arg4 arg5:(id)arg5;
+@end
+
+@interface SignalBase6 : SignalBase
+-(void)emitArg1:(id)arg1 arg2:(id)arg2 arg3:(id)arg3 arg4:(id)arg4 arg5:(id)arg5 arg6:(id)arg6;
+@end
+
+@interface SignalBase7 : SignalBase
+-(void)emitArg1:(id)arg1 arg2:(id)arg2 arg3:(id)arg3 arg4:(id)arg4 arg5:(id)arg5 arg6:(id)arg6 arg7:(id)arg7;
+@end
+
+@interface SignalBase8 : SignalBase
+-(void)emitArg1:(id)arg1 arg2:(id)arg2 arg3:(id)arg3 arg4:(id)arg4 arg5:(id)arg5 arg6:(id)arg6 arg7:(id)arg7 arg8:(id)arg8;
+@end
+
+
+
+
+
+

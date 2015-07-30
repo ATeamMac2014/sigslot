@@ -13,4 +13,5 @@
 
 @property(strong) SignalBase0* signalSwitcher;
 @property(strong) SignalBase3* signalSwitcher3;
+@property(strong) SignalBase8* signalSwitcher8;
 @end

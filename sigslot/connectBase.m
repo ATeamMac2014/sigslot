@@ -78,6 +78,43 @@
     }
 }
 
+-(void)emitArg1:(id)arg1 arg2:(id)arg2 arg3:(id)arg3 arg4:(id)arg4{
+    IMP imp = [self getImp];
+    void (*impfunc)(id, SEL, id, id, id, id) = (void *)imp;
+    if(impfunc){
+        impfunc(self.slot, self.selector, arg1, arg2, arg3, arg4);
+    }
+}
+
+-(void)emitArg1:(id)arg1 arg2:(id)arg2 arg3:(id)arg3 arg4:(id)arg4 arg5:(id)arg5{
+    IMP imp = [self getImp];
+    void (*impfunc)(id, SEL, id, id, id, id, id) = (void *)imp;
+    if(impfunc){
+        impfunc(self.slot, self.selector, arg1, arg2, arg3, arg4, arg5);
+    }
+}
+-(void)emitArg1:(id)arg1 arg2:(id)arg2 arg3:(id)arg3 arg4:(id)arg4 arg5:(id)arg5 arg6:(id)arg6{
+    IMP imp = [self getImp];
+    void (*impfunc)(id, SEL, id, id, id, id, id, id) = (void *)imp;
+    if(impfunc){
+        impfunc(self.slot, self.selector, arg1, arg2, arg3, arg4, arg5, arg6);
+    }
+}
+-(void)emitArg1:(id)arg1 arg2:(id)arg2 arg3:(id)arg3 arg4:(id)arg4 arg5:(id)arg5 arg6:(id)arg6 arg7:(id)arg7{
+    IMP imp = [self getImp];
+    void (*impfunc)(id, SEL, id, id, id, id, id, id, id) = (void *)imp;
+    if(impfunc){
+        impfunc(self.slot, self.selector, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+    }
+}
+-(void)emitArg1:(id)arg1 arg2:(id)arg2 arg3:(id)arg3 arg4:(id)arg4 arg5:(id)arg5 arg6:(id)arg6 arg7:(id)arg7 arg8:(id)arg8{
+    IMP imp = [self getImp];
+    void (*impfunc)(id, SEL, id, id, id, id, id, id, id, id) = (void *)imp;
+    if(impfunc){
+        impfunc(self.slot, self.selector, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+    }
+}
+
 @end
 
 
