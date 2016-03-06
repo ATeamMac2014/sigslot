@@ -12,9 +12,9 @@
 -(instancetype)init{
     self = [super init];
     if (self){
-        _signalSwitcher = [[SignalBase0 alloc] init];
+        //_signalSwitcher = [[SignalBase0 alloc] init];
         _signalSwitcher3 = [[SignalBase3 alloc] init];
-        _signalSwitcher8 = [[SignalBase8 alloc] init];
+        //_signalSwitcher8 = [[SignalBase8 alloc] init];
     }
     
     return self;

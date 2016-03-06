@@ -11,7 +11,7 @@
 @class hasSlots;
 
 @protocol IConnectBase <NSObject, NSCopying>
-@property(weak) hasSlots* slot;
+@property(unsafe_unretained) hasSlots* slot;
 @property(assign) SEL selector;
 -(id)copy;
 -(void)connect:(hasSlots*)slot sel:(SEL)selector;
@@ -28,7 +28,7 @@
 @end
 
 @interface ConnectBase : NSObject<IConnectBase>
-@property(weak) hasSlots* slot;
+@property(unsafe_unretained) hasSlots* slot;
 @property(assign) SEL selector;
 @end
 

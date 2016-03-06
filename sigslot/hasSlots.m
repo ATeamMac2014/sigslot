@@ -5,12 +5,12 @@
 //  Created by MacWrs on 15/7/28.
 //  Copyright (c) 2015年 MacWrs. All rights reserved.
 //
-
+#import <Foundation/Foundation.h>
 #import "hasSlots.h"
 #import "signalBase.h"
 
 @interface hasSlots()
-@property(strong) NSMutableArray* signals;
+@property(strong) NSHashTable* signals;
 
 @end
 
@@ -19,7 +19,8 @@
 -(instancetype)init{
     self = [super init];
     if (self){
-        _signals = [[NSMutableArray alloc] init];
+        //_signals = [[NSMutableArray alloc] init];
+        _signals = [NSHashTable weakObjectsHashTable];
     }
     
     return self;
@@ -35,7 +36,8 @@
         copy.signals = [self.signals mutableCopy];
     }
     
-    [copy.signals enumerateObjectsUsingBlock:^(SignalBase* obj, NSUInteger idx, BOOL *stop) {
+    NSArray* signalsCopy = [copy.signals allObjects];
+    [signalsCopy enumerateObjectsUsingBlock:^(SignalBase* obj, NSUInteger idx, BOOL *stop) {
         [obj duplicateSlot:self toSlot:copy];
     }];
     
@@ -43,9 +45,9 @@
 }
 
 -(void)disconnectAll{
-    NSMutableArray* copySignals = nil;
+    NSArray* copySignals = nil;
     @synchronized(self.signals){
-        copySignals = [self.signals copy];
+        copySignals = [self.signals allObjects];
         [self.signals removeAllObjects];
     }
     
