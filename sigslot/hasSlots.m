@@ -11,10 +11,20 @@
 
 @interface hasSlots()
 @property(strong) NSHashTable* signals;
+@property(weak) id host;
 
 @end
 
 @implementation hasSlots
+
+- (instancetype)initWithHost:(id)host{
+    self = [self init];
+    if (self){
+        _host = host;
+    }
+    
+    return self;
+}
 
 -(instancetype)init{
     self = [super init];
@@ -64,6 +74,62 @@
 -(void)disconnectSignal:(SignalBase*)signal{
     @synchronized(self.signals){
         [self.signals removeObject:signal];
+    }
+}
+
+
+-(BOOL) respondsToSelector:(SEL)aSelector{
+    if ([self.host respondsToSelector:aSelector]){
+        return YES;
+    }else{
+        return [super respondsToSelector:aSelector];
+    }
+}
+
+-(BOOL)isKindOfClass:(Class)aClass{
+    if ([self.host isKindOfClass:aClass]){
+        return YES;
+    }
+    
+    return [super isKindOfClass:aClass];
+}
+
+-(BOOL)conformsToProtocol:(Protocol *)aProtocol{
+    if ([self.host conformsToProtocol:aProtocol]){
+        return YES;
+    }
+    
+    return [super conformsToProtocol:aProtocol];
+}
+
+
+- (id)forwardingTargetForSelector:(SEL)aSelector{
+    if ([self.host respondsToSelector:aSelector]){
+        return self.host;
+    }
+    else{
+        return [super forwardingTargetForSelector:aSelector];
+    }
+}
+
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector{
+    NSMethodSignature*methodSign = [super methodSignatureForSelector:aSelector];
+    if (!methodSign){
+        if ([self.host respondsToSelector:aSelector]){
+            methodSign = [self.host methodSignatureForSelector:aSelector];
+        }
+        
+    }
+    return methodSign;
+}
+
+- (void)forwardInvocation:(NSInvocation *)anInvocation{
+    SEL aSelector = [anInvocation selector];
+    if ([self.host respondsToSelector:aSelector]){
+        [anInvocation invokeWithTarget:self.host];
+    }
+    else{
+        [super forwardInvocation:anInvocation];
     }
 }
 

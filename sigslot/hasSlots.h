@@ -12,6 +12,8 @@
 
 @interface hasSlots : NSObject<NSCopying>
 
+- (instancetype)initWithHost:(id)host;
+
 -(void)connectSignal:(SignalBase*)signal;
 -(void)disconnectSignal:(SignalBase*)signal;
 
